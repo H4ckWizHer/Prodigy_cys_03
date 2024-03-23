@@ -1,50 +1,64 @@
-A network packet sniffer/analyzer tool
+## Network Packet Sniffer Tool
 
-Ethical Packet Sniffer Tool
+The Ethical Packet Sniffer Tool is a powerful Python script designed for educational purposes. It enables users to capture and analyze network packets, providing insights into network traffic through IP addresses, protocols, and payload data. This tool is built with a focus on ethical use and user-friendliness.
 
-Overview:
-The Ethical Packet Sniffer Tool is a Python-based utility designed for educational purposes to capture and analyze network packets. It leverages the powerful Scapy library to decode packets and provide insights into network traffic. This tool is intended for use in controlled environments where the user has explicit permission to capture and analyze network traffic, promoting ethical hacking practices.
+## Features
 
-Features:
+- **Real-time Network Packet Capture**:    Seamlessly capture packets over specified network interfaces.
+- **Comprehensive Packet Analysis**:       Analyze packets with options to view details like IP addresses, protocols, and payload data.
+- **Interactive User Interface**:          A straightforward menu-driven interface for easy operation.
+- **Ethical Usage Reminder**:              Includes prompts to ensure users are reminded of ethical considerations.
 
-Capture Network Packets:      Listens on a specified network interface and captures packets transmitted over the network.
-Analyze Packets:              Provides options to analyze captured packets, offering details such as IP addresses, protocols, and payload data.
-User-Friendly Interface:      Easy-to-navigate command-line interface for capturing and analyzing packets.
-Ethical Use Reminder:         Emphasizes the importance of using the tool responsibly in permitted network environments.
+## Installation
 
-Installation:
-Prerequisites:
-. Python 3.x
-. Scapy
-Before you begin, ensure you have Python installed on your system. This tool also requires the Scapy library, which can be installed using pip:
+Before you begin, ensure you have Python 3.x installed on your system. Additionally, this tool requires the Scapy library.
+
+### Install Python
+
+Python 3.x is required to run this tool. Download and install it from [Python's official website](https://www.python.org/downloads/).
+
+### Install Scapy
+
+Scapy is a powerful Python library used for packet manipulation. Install it using pip:
 pip install scapy
 
-Dependencies:
-The tool relies on the Scapy library, a powerful packet manipulation tool. It's used for packet crafting and sniffing in this project.
-from scapy.all import *
+## Usage
 
-Setup:
-Clone this repository to your local machine:
-git clone https://github.com/H4ckWizHer/ethical-packet-sniffer.git
-cd ethical-packet-sniffer
+Follow these steps to start capturing and analyzing network packets with the Ethical Packet Sniffer Tool.
 
-Usage:
-Run the tool from the command line:
+### Starting the Tool
+
+To launch the tool, navigate to the directory containing the script and run:
 python packet_sniffer.py
 
-Follow the on-screen prompts to either capture packets or analyze previously captured packets. When capturing packets, you will need to specify the network interface (e.g., eth0, wlan0) on which the tool should listen
+### Capturing Network Packets
 
-How It Works:
-The tool operates in two main modes:
+1. From the main menu, choose `1` to start the packet capture process.
+2. When prompted, enter the network interface you wish to monitor (e.g., `eth0`, `wlan0`).
 
-. Capture Mode:     Sniffs packets on a specified network interface, leveraging the Scapy library's sniff function. Captured packets are stored in a global list for later analysis.
+### Analyzing Network Packets
 
-. Analysis Mode:    Allows the user to analyze the captured packets. Users can choose to view IP addresses, protocols, payload data, or all available information about each packet.
+1. To analyze the captured packets, select `2` from the main menu.
+2. Choose your desired level of detail for packet analysis:
+   - `1` for IP Addresses only
+   - `2` for Protocol types
+   - `3` for Payload data
+   - `4` for All above details
 
-Contributing:
-Contributions are welcome! Please feel free to submit pull requests or open issues to suggest improvements or add new features.
+### Exiting the Tool
 
-License:
-This project is licensed under the MIT License - see the LICENSE file for details.
+When you're finished, select `3` from the main menu to exit the tool.
 
+## Ethical Considerations
 
+This tool is intended for educational purposes and ethical use only. Users are strongly encouraged to capture and analyze packets only on networks for which they have explicit permission. Unauthorized use may violate privacy laws and ethical standards.
+
+## Contributing
+
+Contributions to improve the Ethical Packet Sniffer Tool are welcome. Feel free to fork the repository, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. For more information, please refer to the LICENSE file in the repository.
+
+---
